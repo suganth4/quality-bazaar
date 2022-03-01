@@ -18,7 +18,7 @@ export default {
    }
   },
   mounted:  async function () {
-    axios.get(''https://jsonplaceholder.typicode.com/todos/1']')
+    axios.get('http://localhost:5000/')
     .then((response) => {
       console.log(response);
     }).catch(()=>{
