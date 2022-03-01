@@ -3,4 +3,8 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 
-module.exports = 
+module.exports = {
+  devServer: {
+    proxy: "http://localhost:5500"
+  }
+}
