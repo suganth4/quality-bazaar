@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-
+  <h1>suhganth</h1>
   {{ count }}
 </template>
 
@@ -14,13 +14,16 @@ export default {
     HelloWorld
   },
   data: ()=> {
-   return{ count:0
+   return{ payload:{"name":"suganth"}
    }
   },
   mounted:  async function () {
-    axios.get('http://localhost:5000/')
+    axios.post('http://localhost:5000/', {
+      name: "rasu",
+      age: 35
+    })
     .then((response) => {
-      console.log(response);
+      console.log(response.data);
     }).catch(()=>{
       console.log("sdfsd");
     })
