@@ -1,9 +1,6 @@
 <template>
     <div>
         <div id="header">
-            <div>
-                <img src="../assets/myntra.jpg" alt="" id="image">
-            </div>
             <div class="option">
                 <a href="" class="options-list">MEN</a>    
                 <a href="" class="options-list">WOMEN</a>    
@@ -12,7 +9,7 @@
                 <a href="" class="options-list">STUDIO</a>    
             </div>
             <div>
-                <input type="text" name="" value="" id="search">
+                <input type="text" name="" value="" placeholder="Search for products, brands and more"  id="search">
             </div>
             <div class="option">
                 <a href="" class="kart">Profile</a>
@@ -42,8 +39,13 @@ export default {
     margin: 10px;
 }
 #search {
-    font-size: 20px;
+    font-size: 10px;
     margin: 10px;
+    width: 200px;
+    height: 20px;
+    color: black;
+    opacity: 0.5;
+    padding: 10px;
 }
 #image {
     width: 150px;
