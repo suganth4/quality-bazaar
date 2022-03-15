@@ -27,6 +27,7 @@ export default {
     }).catch(()=>{
       console.log("sdfsd");
     })
+    console.log("suganth")
   }
 }
 </script>
