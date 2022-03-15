@@ -31,6 +31,7 @@ export default {
 #header, .option {
     display: flex;
     justify-content: space-between ;
+    border: 1px solid black;
 }
 .options-list, .kart {
     text-decoration: none;
