@@ -83,9 +83,12 @@ export default {
     display: block;
 }
 #men {
-    visibility: hidden;
-    position: relative;
-    top:200px;
+    display: none;
+}
+#men {
+    display: block;
+    position: absolute;
+    top:50px;
 }
 #options-list-1:hover a{
     border-bottom: solid 5px rgb(255, 0, 179);
