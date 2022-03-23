@@ -18,22 +18,30 @@
     <div>
         <div id="header">
             <div class="option">
-                <a href="" id="options-list-1">MEN</a>    
-                <a href="" id="options-list-2">WOMEN</a>    
-                <a href="" id="options-list-3">KIDS</a>    
-                <a href="" id="options-list-4">BEAUTY</a>    
-                <a href="" id="options-list-5">STUDIO</a>    
+                <ul class="menu">
+                    <li id="options-list-1">
+                        <a href="" >MEN</a>
+                        <div id="men">
+                            <a href="">T-shirt</a>
+                            <a href="">Casual Shirt</a>
+                            <a href="">Formal Shirt</a>
+                        </div>
+                    </li>    
+                    <li>
+                        <a href="" id="options-list-2">WOMEN</a>
+                    </li>    
+                    <li>
+                        <a href="" id="options-list-3">KIDS</a>
+                    </li>    
+                    <li>
+                        <a href="" id="options-list-4">BEAUTY</a>
+                    </li>    
+                    <li>
+                        <a href="" id="options-list-5">STUDIO</a>
+                    </li>
+                </ul>    
             </div>
-            <ul id="men">
-                <li>suganth</li>
-                <li>suganth</li>
-                <li>suganth</li>
-                <li>suganth</li>
-                <li>suganth</li>
-                <li>suganth</li>
-                <li>suganth</li>
-                <li>suganth</li>
-            </ul>
+
             <div>
                 <input type="text" name="" value="" placeholder="Search for products, brands and more"  id="search">
             </div>
@@ -59,13 +67,31 @@ export default {
     justify-content: space-between ;
     margin-top: 10px;
 }
-#options-list-1,#options-list-2,#options-list-3,#options-list-4,#options-list-5,.kart {
+.menu {
+    list-style-type:none;
+}
+.menu li {
+    display: inline-block;
+}
+#options-list-1 a,#options-list-2,#options-list-3,#options-list-4,#options-list-5,.kart {
     text-decoration: none;
     color: black;
     font-size: 15px;
     margin: 10px;
+    border: 1px
+    border-bottom-color: blue;
+    border-bottom-width: 10px;
 }
-#option
+#men a {
+    display: block;
+}
+#men {
+    display: none;
+}
+
+#options-list-1:hover #men {
+    display: block;
+}
 #search {
     font-size: 10px;
     margin: 10px;
