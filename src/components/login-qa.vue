@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<!-- <div class="container">
   <h2>Dropdowns</h2>
   <p>The .dropdown class is used to indicate a dropdown menu.</p>
   <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
@@ -7,21 +7,22 @@
   <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
     <span class="caret"></span></button>
+    <h1 class="text">suganth</h1>
     <ul class="dropdown-menu">
       <li><a href="#">HTML</a></li>
       <li><a href="#">CSS</a></li>
       <li><a href="#">JavaScript</a></li>
     </ul>
-  </div>
-</div>
+  </div> -->
+<!-- </div> -->
     <div>
         <div id="header">
             <div class="option">
-                <a href="" class="options-list">MEN</a>    
-                <a href="" class="options-list">WOMEN</a>    
-                <a href="" class="options-list">KIDS</a>    
-                <a href="" class="options-list">BEAUTY</a>    
-                <a href="" class="options-list">STUDIO</a>    
+                <a href="" id="options-list-1">MEN</a>    
+                <a href="" id="options-list-2">WOMEN</a>    
+                <a href="" id="options-list-3">KIDS</a>    
+                <a href="" id="options-list-4">BEAUTY</a>    
+                <a href="" id="options-list-5">STUDIO</a>    
             </div>
             <ul id="men">
                 <li>suganth</li>
@@ -58,12 +59,13 @@ export default {
     justify-content: space-between ;
     margin-top: 10px;
 }
-.options-list, .kart {
+#options-list-1,#options-list-2,#options-list-3,#options-list-4,#options-list-5,.kart {
     text-decoration: none;
     color: black;
     font-size: 15px;
     margin: 10px;
 }
+#option
 #search {
     font-size: 10px;
     margin: 10px;
