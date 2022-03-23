@@ -8,6 +8,9 @@
                 <a href="" class="options-list">BEAUTY</a>    
                 <a href="" class="options-list">STUDIO</a>    
             </div>
+            <ul>
+                <li></li>
+            </ul>
             <div>
                 <input type="text" name="" value="" placeholder="Search for products, brands and more"  id="search">
             </div>
@@ -31,7 +34,7 @@ export default {
 #header, .option {
     display: flex;
     justify-content: space-between ;
-    border: 1px solid black;
+    margin-top: 10px;
 }
 .options-list, .kart {
     text-decoration: none;
@@ -42,8 +45,8 @@ export default {
 #search {
     font-size: 10px;
     margin: 10px;
-    width: 200px;
-    height: 20px;
+    width: 300px;
+    height: 15px;
     color: black;
     opacity: 0.5;
     padding: 10px;
