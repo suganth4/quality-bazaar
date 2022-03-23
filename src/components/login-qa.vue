@@ -108,7 +108,7 @@ li {
 #men, #women, #kids, #beauty, #studio{
     display: none;
 }
-#options-list-1:hover #men, #options-list-2:hover #women {
+#options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids, #options-list-4:hover #beauty, #options-list-5:hover #studio {
     display: block;
     position: absolute;
     top:80px;
