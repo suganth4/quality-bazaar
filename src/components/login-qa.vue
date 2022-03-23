@@ -20,24 +20,44 @@
             <div class="option">
                 <ul class="menu">
                     <li id="options-list-1">
-                        <a href="" >MEN</a>
+                        <a href="" id="men-menu">MEN</a>
                         <div id="men">
                             <a href="">T-shirt</a>
                             <a href="">Casual Shirt</a>
                             <a href="">Formal Shirt</a>
                         </div>
                     </li>    
-                    <li>
-                        <a href="" id="options-list-2">WOMEN</a>
+                    <li id="options-list-2">
+                        <a href="" id="women-menu">WOMEN</a>
+                        <div id="women">
+                            <a href="">T-shirt</a>
+                            <a href="">Casual Shirt</a>
+                            <a href="">Formal Shirt</a>
+                        </div>
                     </li>    
-                    <li>
-                        <a href="" id="options-list-3">KIDS</a>
+                    <li id="options-list-3">
+                        <a href="" id="kids-menu">KIDS</a>
+                        <div id="kids">
+                            <a href="">T-shirt</a>
+                            <a href="">Casual Shirt</a>
+                            <a href="">Formal Shirt</a>
+                        </div>
                     </li>    
-                    <li>
-                        <a href="" id="options-list-4">BEAUTY</a>
+                    <li id="options-list-4">
+                        <a href="" id="beauty-menu">BEAUTY</a>
+                        <div id="beauty">
+                            <a href="">T-shirt</a>
+                            <a href="">Casual Shirt</a>
+                            <a href="">Formal Shirt</a>
+                        </div>
                     </li>    
-                    <li>
-                        <a href="" id="options-list-5">STUDIO</a>
+                    <li id="options-list-5">
+                        <a href="" id="studio-menu">STUDIO</a>
+                       <div id="studio">
+                            <a href="">T-shirt</a>
+                            <a href="">Casual Shirt</a>
+                            <a href="">Formal Shirt</a>
+                        </div>
                     </li>
                 </ul>    
             </div>
@@ -73,27 +93,30 @@ export default {
 .menu li {
     display: inline-block;
 }
-#options-list-1 a,#options-list-2,#options-list-3,#options-list-4,#options-list-5,.kart {
+li {
+    padding: 10px;
+}
+#options-list-1 a,#options-list-2 a,#options-list-3 a,#options-list-4 a,#options-list-5 a,.kart {
     text-decoration: none;
     color: black;
     font-size: 15px;
-    margin: 10px;
+    margin: 5px;
 }
-#men a {
+#men a, #women a, #kids a, #beauty a, #studio a {
     display: block;
 }
-#men {
+#men, #women, #kids, #beauty, #studio{
     display: none;
 }
-#men {
+#options-list-1:hover #men, #options-list-2:hover #women {
     display: block;
     position: absolute;
-    top:50px;
+    top:80px;
 }
-#options-list-1:hover a{
+#options-list-1:hover, #options-list-2:hover, #options-list-3:hover, #options-list-4:hover, #options-list-5:hover{
     border-bottom: solid 5px rgb(255, 0, 179);
 }
-#options-list-1:hover #men {
+#options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids, #options-list-4:hover #beauty, #options-list-5:hover #studio {
     display: block;
 }
 #search {
