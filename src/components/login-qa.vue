@@ -78,17 +78,18 @@ export default {
     color: black;
     font-size: 15px;
     margin: 10px;
-    border: 1px
-    border-bottom-color: blue;
-    border-bottom-width: 10px;
 }
 #men a {
     display: block;
 }
 #men {
-    display: none;
+    visibility: hidden;
+    position: relative;
+    top:200px;
 }
-
+#options-list-1:hover a{
+    border-bottom: solid 5px rgb(255, 0, 179);
+}
 #options-list-1:hover #men {
     display: block;
 }
