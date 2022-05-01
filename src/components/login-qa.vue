@@ -98,9 +98,10 @@ li {
 }
 #options-list-1 a,#options-list-2 a,#options-list-3 a,#options-list-4 a,#options-list-5 a,.kart {
     text-decoration: none;
-    color: black;
     font-size: 15px;
     margin: 5px;
+    font-weight: 600;
+    color: black;
 }
 #men a, #women a, #kids a, #beauty a, #studio a {
     display: block;
