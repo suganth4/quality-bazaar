@@ -26,16 +26,24 @@
                             <a href="">Casual Shirt</a>
                             <a href="">Formal Shirt</a>
                         </div>
-                    </li>    
+                    </li>
                     <li id="options-list-4">
+                        <a href="" id="homeAndLiving-menu">HOME & LIVING</a>
+                        <div id="home">
+                            <a href="">T-shirt</a>
+                            <a href="">Casual Shirt</a>
+                            <a href="">Formal Shirt</a>
+                        </div>
+                    </li>  
+                    <li id="options-list-5">
                         <a href="" id="beauty-menu">BEAUTY</a>
                         <div id="beauty">
                             <a href="">T-shirt</a>
                             <a href="">Casual Shirt</a>
                             <a href="">Formal Shirt</a>
                         </div>
-                    </li>    
-                    <li id="options-list-5">
+                    </li>        
+                    <li id="options-list-6">
                         <a href="" id="studio-menu">STUDIO</a>
                        <div id="studio">
                             <a href="">T-shirt</a>
@@ -86,6 +94,7 @@ export default {
 #header, .option {
     display: flex;
     justify-content: space-between ;
+    border: 1px solid red;
 }
 .right {
     padding: 10px;
@@ -95,6 +104,7 @@ export default {
     list-style-type:none;
     margin: 0px;
     margin-top:5px ;
+    border: 1px solid red;
 }
 .menu li {
     display: inline-block;
@@ -102,7 +112,7 @@ export default {
 li {
     padding: 10px;
 }
-#options-list-1 a,#options-list-2 a,#options-list-3 a,#options-list-4 a,#options-list-5 a,.kart {
+#options-list-1 a,#options-list-2 a,#options-list-3 a,#options-list-4 a,#options-list-5, #options-list-6, a,.kart {
     text-decoration: none;
     font-size: 15px;
     margin: 5px;
@@ -124,21 +134,21 @@ li {
 .kart-options {
     margin: 10px;
 }
-#men a, #women a, #kids a, #beauty a, #studio a {
+#men a, #women a, #kids a, #beauty a, #studio a, #home a {
     display: block;
 }
-#men, #women, #kids, #beauty, #studio{
+#men, #women, #kids, #beauty, #studio , #home{
     display: none;
 }
-#options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids, #options-list-4:hover #beauty, #options-list-5:hover #studio {
+#options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids,#options-list-4:hover #home, #options-list-5:hover #beauty, #options-list-6:hover #studio {
     display: block;
     position: absolute;
     top:80px;
 }
-#options-list-1:hover, #options-list-2:hover, #options-list-3:hover, #options-list-4:hover, #options-list-5:hover{
+#options-list-1:hover, #options-list-2:hover, #options-list-3:hover,#options-list-4:hover #home, #options-list-5:hover, #options-list-6:hover{
     border-bottom: solid 5px rgb(255, 0, 179);
 }
-#options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids, #options-list-4:hover #beauty, #options-list-5:hover #studio {
+#options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids,#options-list-4:hover #home, #options-list-5:hover #beauty, #options-list-6:hover #studio {
     display: block;
 }
 #search {
@@ -154,12 +164,15 @@ li {
     background: #f5f5f6;
     font-size: 13px;
     color: rgb(0, 0, 0);
+    
 }
 #search:focus {
        background: white; 
 }
 .search {
     position: relative;
+    margin-left: 250px;
+    border: 1px solid red;
 }
 .fa-search {
     position: absolute;
