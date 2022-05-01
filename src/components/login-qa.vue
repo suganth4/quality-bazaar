@@ -1,20 +1,4 @@
 <template>
-<!-- <div class="container">
-  <h2>Dropdowns</h2>
-  <p>The .dropdown class is used to indicate a dropdown menu.</p>
-  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
-  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
-  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-    <span class="caret"></span></button>
-    <h1 class="text">suganth</h1>
-    <ul class="dropdown-menu">
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-    </ul>
-  </div> -->
-<!-- </div> -->
     <div>
         <div id="header">
             <div class="option">
@@ -62,11 +46,15 @@
                 </ul>    
             </div>
 
-            <div>
+            <div class="search">
+                <i class="fas fa-search"></i>
                 <input type="text" name="" value="" placeholder="Search for products, brands and more"  id="search">
             </div>
             <div class="option right">
-                <a href="" class="kart">Profile</a>
+                <div>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="" class="kart">Profile</a>
+                </div>
                 <a href="" class="kart">Wishlist</a>
                 <a href="" class="kart">Bag</a>
             </div>
@@ -129,9 +117,10 @@ li {
 #search {
     font-size: 10px;
     margin: 10px;
-    width: 350px;
+    width: 300px;
     height: 20px;
     padding: 10px;
+    padding-left: 40px;
     border: 0.1px solid rgba(189, 179, 179,0.3);
     outline: none;
     border-radius: 5px;
@@ -141,6 +130,15 @@ li {
 }
 #search:focus {
        background: white; 
+}
+.search {
+    position: relative;
+}
+.fa-search {
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    opacity: 0.5;
 }
 #image {
     width: 150px;
