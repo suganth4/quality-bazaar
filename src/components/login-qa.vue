@@ -58,7 +58,7 @@
                 <i class="fas fa-search"></i>
                 <input type="text" name="" value="" placeholder="Search for products, brands and more"  id="search">
             </div>
-            <div class="option right">
+            <div class="options right">
                 <div class="kart-options">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <div >
@@ -91,10 +91,10 @@ export default {
 </script>
 
 <style>
-#header, .option {
+#header, .options {
     display: flex;
     justify-content: space-between ;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .right {
     padding: 10px;
@@ -104,7 +104,7 @@ export default {
     list-style-type:none;
     margin: 0px;
     margin-top:5px ;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .menu li {
     display: inline-block;
@@ -171,8 +171,8 @@ li {
 }
 .search {
     position: relative;
-    margin-left: 250px;
-    border: 1px solid red;
+    margin-left: 100px;
+    /* border: 1px solid red; */
 }
 .fa-search {
     position: absolute;
