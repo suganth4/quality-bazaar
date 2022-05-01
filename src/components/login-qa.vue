@@ -123,12 +123,16 @@ li {
 #search {
     font-size: 10px;
     margin: 10px;
-    width: 300px;
-    height: 15px;
-    color: black;
-    opacity: 0.5;
+    width: 350px;
+    height: 38px;
     padding: 10px;
+    border: 0.1px solid rgba(189, 179, 179,0.1);
+    border-radius: 5px;
+    background: #f5f5f6;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
 }
+#search:
 #image {
     width: 150px;
     height: 150px;
