@@ -85,10 +85,16 @@ export default {
 #header, .option {
     display: flex;
     justify-content: space-between ;
-    margin-top: 10px;
+    margin-top: 5px;
+        border: 1px solid black;
+}
+.option {
+    padding-top:10px ;
 }
 .menu {
     list-style-type:none;
+    margin: 0px;
+    margin-top:5px ;
 }
 .menu li {
     display: inline-block;
@@ -124,15 +130,18 @@ li {
     font-size: 10px;
     margin: 10px;
     width: 350px;
-    height: 38px;
+    height: 20px;
     padding: 10px;
-    border: 0.1px solid rgba(189, 179, 179,0.1);
+    border: 0.1px solid rgba(189, 179, 179,0.3);
+    outline: none;
     border-radius: 5px;
     background: #f5f5f6;
     font-size: 13px;
     color: rgb(0, 0, 0);
 }
-#search:
+#search:focus {
+       background: white; 
+}
 #image {
     width: 150px;
     height: 150px;
