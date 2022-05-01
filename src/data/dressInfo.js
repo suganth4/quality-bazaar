@@ -1,5 +1,5 @@
 export default {
-    MEN : [
+    men : [
         {
             title: "Topwear",
             categories: ["T-Shirts", "Casual Shirts", "Formal Shirts", "Sweatshirts", "Sweaters", "Jackets", "Blazers & Coats", "Suits", "Rain Jackets"]

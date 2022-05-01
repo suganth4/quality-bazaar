@@ -6,9 +6,7 @@
                     <li id="options-list-1">
                         <a href="" id="men-menu">MEN</a>
                         <div id="men">
-                            <a href="">T-shirt</a>
-                            <a href="">Casual Shirt</a>
-                            <a href="">Formal Shirt</a>
+                            <menData/>
                         </div>
                     </li>    
                     <li id="options-list-2">
@@ -85,8 +83,11 @@
 
 
 <script>
+import menData from "../components/menData.vue"
 export default {
-    
+    components: {
+        menData : menData
+    }
 }
 </script>
 
