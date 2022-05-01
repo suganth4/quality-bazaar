@@ -51,12 +51,25 @@
                 <input type="text" name="" value="" placeholder="Search for products, brands and more"  id="search">
             </div>
             <div class="option right">
-                <div>
+                <div class="kart-options">
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <a href="" class="kart">Profile</a>
+                    <div >
+                        <a href="" class="kart">Profile</a>
+                    </div>
                 </div>
-                <a href="" class="kart">Wishlist</a>
-                <a href="" class="kart">Bag</a>
+                <div class="kart-options">   
+                    <i class="fa fa-heart-o"></i>
+                    <div>
+                        <a href="" class="kart">Wishlist</a>
+                    </div>
+                </div>
+                <div class="kart-options">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <div>
+                        <a href="" class="kart">Bag</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -73,11 +86,10 @@ export default {
 #header, .option {
     display: flex;
     justify-content: space-between ;
-    margin-top: 5px;
 }
 .right {
-    padding-top:20px ;
-    padding: 30px;
+    padding: 10px;
+    padding-top:5px ;
 }
 .menu {
     list-style-type:none;
@@ -96,6 +108,21 @@ li {
     margin: 5px;
     font-weight: 600;
     color: black;
+}
+.fa-user{
+    margin-bottom: 5px;
+    margin-left: 18px;
+}
+.fa-heart-o {
+    margin-bottom: 5px;
+    margin-left: 22px;
+}
+.fa-shopping-bag {
+    margin-bottom: 5px;
+    margin-left: 10px;  
+}
+.kart-options {
+    margin: 10px;
 }
 #men a, #women a, #kids a, #beauty a, #studio a {
     display: block;
