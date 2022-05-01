@@ -91,10 +91,16 @@ export default {
 </script>
 
 <style>
+body {
+    margin: 0px;
+}
 #header, .options {
     display: flex;
     justify-content: space-between ;
     /* border: 1px solid red; */
+}
+#header {
+    box-shadow:1px 1px 5px rgba(0, 0, 0,0.1) ;
 }
 .right {
     padding: 10px;
@@ -102,8 +108,7 @@ export default {
 }
 .menu {
     list-style-type:none;
-    margin: 0px;
-    margin-top:5px ;
+    margin-bottom: 0px;
     /* border: 1px solid red; */
 }
 .menu li {
@@ -112,10 +117,14 @@ export default {
 li {
     padding: 10px;
 }
-#options-list-1 a,#options-list-2 a,#options-list-3 a,#options-list-4 a,#options-list-5, #options-list-6, a,.kart {
+#options-list-1, #options-list-2, #options-list-3, #options-list-4, #options-list-5, #options-list-6{
+    box-sizing: border-box;
+    padding-bottom: 25px;
+}
+#options-list-1 a,#options-list-2 a,#options-list-3 a,#options-list-4 a,#options-list-5 a, #options-list-6 a,.kart {
     text-decoration: none;
     font-size: 15px;
-    margin: 5px;
+    margin-left: 5px;
     font-weight: 600;
     color: black;
 }
@@ -135,6 +144,7 @@ li {
     margin: 10px;
 }
 #men a, #women a, #kids a, #beauty a, #studio a, #home a {
+    margin: 0px;
     display: block;
 }
 #men, #women, #kids, #beauty, #studio , #home{
@@ -145,7 +155,7 @@ li {
     position: absolute;
     top:80px;
 }
-#options-list-1:hover, #options-list-2:hover, #options-list-3:hover,#options-list-4:hover #home, #options-list-5:hover, #options-list-6:hover{
+#options-list-1:hover, #options-list-2:hover, #options-list-3:hover,#options-list-4:hover, #options-list-5:hover, #options-list-6:hover{
     border-bottom: solid 5px rgb(255, 0, 179);
 }
 #options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids,#options-list-4:hover #home, #options-list-5:hover #beauty, #options-list-6:hover #studio {
@@ -172,6 +182,7 @@ li {
 .search {
     position: relative;
     margin-left: 100px;
+    margin-top:5px ;
     /* border: 1px solid red; */
 }
 .fa-search {
