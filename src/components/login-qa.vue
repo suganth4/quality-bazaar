@@ -65,7 +65,7 @@
             <div>
                 <input type="text" name="" value="" placeholder="Search for products, brands and more"  id="search">
             </div>
-            <div class="option">
+            <div class="option right">
                 <a href="" class="kart">Profile</a>
                 <a href="" class="kart">Wishlist</a>
                 <a href="" class="kart">Bag</a>
@@ -86,10 +86,10 @@ export default {
     display: flex;
     justify-content: space-between ;
     margin-top: 5px;
-        border: 1px solid black;
 }
-.option {
-    padding-top:10px ;
+.right {
+    padding-top:20px ;
+    padding: 30px;
 }
 .menu {
     list-style-type:none;
