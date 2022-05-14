@@ -3,9 +3,11 @@
         <div v-for="Info in da.men" :key = "Info" class="detail">
             <div>
                 <h4>{{ Info.title }}</h4>
-                <div v-for="dress in Info.categories" :key="dress">
-                    {{ dress }}
-                </div>
+                <ul>
+                    <li v-for="dress in Info.categories" :key="dress">
+                        {{ dress }}
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -33,9 +35,10 @@ h4{
 #main{
     background: green;
     width: 800px;
-    height: 500px;
-}
-.detail{
+    height: 350px;
+    padding-left: 30px;
+    padding-right:30px ;
+    padding-bottom:30px ;
     display: flex;
 }
 </style>
