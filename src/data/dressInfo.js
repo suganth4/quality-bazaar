@@ -35,6 +35,26 @@ export default {
         {
             title: "Watches",
             categories: []
+        },
+        {
+            title: "Sports & Active Wear",
+            categories: ["Sports Shoes", "Sports Sandals", "Active T-Shirts", "Track Pants & Shorts", "Tracksuits", "Jackets & Sweatshirts", "Sports Accessories", "Swimwear"]
+        },
+        {
+            title: "Gadgets",
+            categories: ["Smart Wearables", "Fitness Gadgets", "Headphones", "Speakers"]
+        },
+        {
+            title: "Fashion Accessories",
+            categories: ["Wallets", "Belts", "Perfumes & Body Mists", "Trimmers", "Deodorants", "Ties, Cufflinks & Pocket Squares", "Accessory Gift Sets", "Caps & Hats", "Mufflers, Scarves & Gloves", "Phone Cases", "Rings & Wristwear", "Helmets"] 
+        },
+        {
+            title: "Bags & Backpacks",
+            categories: []
+        },
+        {
+            title: "Luggages & Trolleys",
+            categories: []
         }
     ],
 };

@@ -32,6 +32,7 @@ body{
 h4{
     color: rgb(255, 0, 212);
     margin:8px;
+    font-size: 12px;
 }
 ul {
     padding: 5px;
@@ -43,12 +44,18 @@ li {
     box-sizing: content-box;
     /* padding-right: 50px; */
     color:rgba(0, 0, 0,0.7);
+    font-size: 12px;
+}
+.detail {
+    display: inline-block;
 }
 #main{
     background: pink;
-    width: 90%;
+    width: 80%;
     margin: auto;
     height: 430px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 </style>
