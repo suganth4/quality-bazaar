@@ -51,7 +51,7 @@ li {
 }
 #main{
     background: pink;
-    width: 80%;
+    width: 90%;
     margin: auto;
     height: 430px;
     display: flex;

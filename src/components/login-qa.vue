@@ -151,30 +151,32 @@ li {
     width: 100%;
     display: block;
 }
+@keyframes example {
+  from {display:none;}
+  to {display: none;}
+}
  #men,#women, #kids, #beauty, #studio , #home{
     display: none;
     /* background-color: pink; */
     width: 90%;
+    transition: display 2s;
 }
-#men{
-    display:block;
+/* #men{ */
+    /* display:block; */
     /* background-color: pink; */
-    width: 100%; 
+    /* width: 100%; 
     position: absolute;
-     top:80px;
-} 
-
+     top:80px; */
+/* }  */
 #options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids,#options-list-4:hover #home, #options-list-5:hover #beauty, #options-list-6:hover #studio {
-    display: block;
+    animation: example 2s;
     position: absolute;
-    top:50px;
+    top:82px;
 }
 #options-list-1:hover, #options-list-2:hover, #options-list-3:hover,#options-list-4:hover, #options-list-5:hover, #options-list-6:hover{
     border-bottom: solid 5px rgb(255, 0, 179);
 }
-#options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids,#options-list-4:hover #home, #options-list-5:hover #beauty, #options-list-6:hover #studio {
-    display: block;
-}
+
 #search {
     font-size: 10px;
     margin: 10px;
