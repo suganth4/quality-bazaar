@@ -91,7 +91,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 body {
     margin: 0px;
 }
@@ -99,9 +99,11 @@ body {
     display: flex;
     justify-content: space-between ;
     /* border: 1px solid red; */
+
 }
 #header {
     box-shadow:1px 1px 5px rgba(0, 0, 0,0.1) ;
+
 }
 .right {
     padding: 10px;
@@ -146,15 +148,26 @@ li {
 }
 #men a, #women a, #kids a, #beauty a, #studio a, #home a {
     margin: 0px;
+    width: 100%;
     display: block;
 }
-#men, #women, #kids, #beauty, #studio , #home{
+ #men,#women, #kids, #beauty, #studio , #home{
     display: none;
+    /* background-color: pink; */
+    width: 90%;
 }
+#men{
+    display:block;
+    /* background-color: pink; */
+    width: 100%; 
+    position: absolute;
+     top:80px;
+} 
+
 #options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids,#options-list-4:hover #home, #options-list-5:hover #beauty, #options-list-6:hover #studio {
     display: block;
     position: absolute;
-    top:80px;
+    top:50px;
 }
 #options-list-1:hover, #options-list-2:hover, #options-list-3:hover,#options-list-4:hover, #options-list-5:hover, #options-list-6:hover{
     border-bottom: solid 5px rgb(255, 0, 179);
@@ -196,4 +209,5 @@ li {
     width: 150px;
     height: 150px;
 }
+
 </style>

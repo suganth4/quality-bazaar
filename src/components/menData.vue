@@ -30,15 +30,25 @@ body{
     margin: 0px;
 }
 h4{
-    color: rgb(255, 0, 212)
+    color: rgb(255, 0, 212);
+    margin:8px;
+}
+ul {
+    padding: 5px;
+    width: 180px;
+}
+li {
+    padding:5px;
+    display:block;
+    box-sizing: content-box;
+    /* padding-right: 50px; */
+    color:rgba(0, 0, 0,0.7);
 }
 #main{
-    background: green;
-    width: 800px;
-    height: 350px;
-    padding-left: 30px;
-    padding-right:30px ;
-    padding-bottom:30px ;
+    background: pink;
+    width: 90%;
+    margin: auto;
+    height: 430px;
     display: flex;
 }
 </style>
