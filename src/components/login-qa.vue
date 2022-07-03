@@ -151,15 +151,10 @@ li {
     width: 100%;
     display: block;
 }
-@keyframes example {
-  from {display:none;}
-  to {display: none;}
-}
  #men,#women, #kids, #beauty, #studio , #home{
     display: none;
     /* background-color: pink; */
     width: 90%;
-    transition: display 2s;
 }
 /* #men{ */
     /* display:block; */
@@ -169,7 +164,7 @@ li {
      top:80px; */
 /* }  */
 #options-list-1:hover #men, #options-list-2:hover #women, #options-list-3:hover #kids,#options-list-4:hover #home, #options-list-5:hover #beauty, #options-list-6:hover #studio {
-    animation: example 2s;
+    display: block;
     position: absolute;
     top:82px;
 }
