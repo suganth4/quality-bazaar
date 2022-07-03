@@ -1,17 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <h1>suhganth</h1>
-  {{ count }}
+  <Login msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Login from './components/login-qa.vue';
 import axios from 'axios'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Login
   },
   data: ()=> {
    return{ payload:{"name":"suganth"}
@@ -27,17 +24,11 @@ export default {
     }).catch(()=>{
       console.log("sdfsd");
     })
+    console.log("suganth")
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
